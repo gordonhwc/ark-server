@@ -9,8 +9,8 @@ ENV TZ=Asia/Hong_Kong
 USER root
 
 # Copy scripts to the container
-COPY init.sh /home/steam/init.sh
-COPY start.sh /home/steam/start.sh
+COPY init.sh /home/steam/
+COPY start.sh /home/steam/
 
 # Define the volume
 VOLUME ["/home/steam/Steam"]
