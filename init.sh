@@ -10,14 +10,5 @@ if [[ ! -f /home/steam/Steam/start.sh ]]; then
     chown steam:steam /home/steam/Steam/start.sh
 fi
 
-# Switch to the `steam` user and execute the start script in the background
-su --login steam -c "exec bash /home/steam/Steam/start.sh" &
-
-# Capture the PID of the background child process
-child_pid=$!
-
-# Set a trap to gracefully terminate the child process upon receiving a SIGTERM signal
-trap "kill $child_pid; wait $child_pid; exit 0" SIGTERM
-
-# Block and wait for the child process
-wait $child_pid
+# Switch to the `steam` user and execute the start script
+exec su --login steam --command "exec bash /home/steam/Steam/start.sh"
