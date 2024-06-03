@@ -11,4 +11,4 @@ if [[ ! -f /home/steam/Steam/start.sh ]]; then
 fi
 
 # Switch to the `steam` user and execute the start script
-exec su --login steam --command "exec bash /home/steam/Steam/start.sh"
+exec su steam --command "exec /home/steam/Steam/start.sh"
