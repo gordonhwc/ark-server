@@ -17,6 +17,25 @@ Build the Docker image:
 sudo docker build --tag ark-server:latest .
 ```
 
+## Running a Container
+
+Create and run a new container from the image:
+
+```sh
+docker run --detach \
+	--name SteamCMD \
+	--env UID=1026 \
+	--env GID=100 \
+	--env TZ=Asia/Hong_Kong \
+	--publish 7777:7777 \
+	--publish 7778:7778 \
+	--publish 27015:27015 \
+	--volume <HOST_PATH>:/home/steam/Steam \
+	ark-server:latest
+```
+
+Replace `<HOST_PATH>` with the path on your host machine where you want to store the data.
+
 ## Exporting the Image
 
 Save the Docker image to a file:
