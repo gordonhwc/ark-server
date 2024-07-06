@@ -27,9 +27,9 @@ docker run --detach \
 	--env UID=1026 \
 	--env GID=100 \
 	--env TZ=Asia/Hong_Kong \
-	--publish 7777:7777 \
-	--publish 7778:7778 \
-	--publish 27015:27015 \
+	--publish 7777:7777/udp \
+	--publish 7778:7778/udp \
+	--publish 27015:27015/udp \
 	--volume /Volumes/docker/SteamCMD:/home/steam/Steam \
 	ark-server:latest
 ```
