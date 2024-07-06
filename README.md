@@ -30,11 +30,9 @@ docker run --detach \
 	--publish 7777:7777 \
 	--publish 7778:7778 \
 	--publish 27015:27015 \
-	--volume <HOST_PATH>:/home/steam/Steam \
+	--volume /Volumes/docker/SteamCMD:/home/steam/Steam \
 	ark-server:latest
 ```
-
-Replace `<HOST_PATH>` with the path on your host machine where you want to store the data.
 
 ## Exporting the Image
 
