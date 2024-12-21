@@ -47,7 +47,7 @@ sudo docker save --output ark-server.tar ark-server:latest
 - **Container Name**: SteamCMD
 - **CPU Priority**: High
 - **Memory Limit**: 4096 MB
-- **Volume**: `/docker/SteamCMD:/home/steam/SteamCMD`
+- **Volume**: `/docker/SteamCMD:/home/steam/Steam`
 - **Environment**:
   - `UID`: User ID of the owner of the mounting point
   - `GID`: Group ID of the owner of the mounting point
