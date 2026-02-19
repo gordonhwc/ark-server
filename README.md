@@ -14,7 +14,7 @@ tools.
 Clone the repository:
 
 ```sh
-git clone https://github.com/gordon0907/ark-server.git
+git clone https://github.com/gordonhwc/ark-server.git
 cd ark-server
 ```
 
@@ -55,7 +55,7 @@ another platform in advance.
 #### 1. Download and Extract the Repository
 
 ```sh
-git clone https://github.com/gordon0907/ark-server.git
+git clone https://github.com/gordonhwc/ark-server.git
 cd ark-server
 ```
 
